@@ -1,0 +1,137 @@
+body{
+    margin:0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{/*enlaces*/
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+}
+
+header nav{/*barra de navegación*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+    width: 250px;
+    height: auto;
+    display: flex; /*hacer elementos flexibles*/
+    list-style: none; /*quitar decoracion de lista*/
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-right-section a{ /*espacio hacia la derecha y color negro*/
+    margin-right: 10px;
+    color: black;
+}
+
+#perfil{ 
+    width: 32px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+main {
+    margin-top: 130px; /*espaciado exterior de arriba*/
+    text-align: center;
+}
+
+main .main-logo{
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 30px; /*espaciado exterior de abajo*/
+}
+
+main .main-logo img{
+    width: 500px; /*tamaño de la imagen*/
+}
+
+main .main-input{ /*cajita de buscador*/
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+main .main-input-container{
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid rgb(141, 133, 133);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input{
+    width: 445px;
+    height: 25px;
+    border: none;
+    outline: none;
+}
+
+main .main-buttons{
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+    display: inline-block;
+}
+
+main .main-buttons button{
+    height: 40px;
+    background-color: wheat;
+    border: 0;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 0 15px; /*espaciado interior*/
+    margin-right: 30px;
+}
+
+main .main-buttons button:hover{
+    background-color: rgb(121, 78, 161);
+    border: 1px solid rgba(240, 248, 255, 0.527);
+    box-shadow: 0 1px 1px black;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0; /*lo coloca en la parte inferior*/
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*divide en dos columnas -dos fracciones-*/
+    align-items: center;
+    font-size: 12px;
+    background-color: wheat;
+    border-top: 1px solid rgba(240, 248, 255, 0.527); /*borde superior*/
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    margin: 10px;
+    color: black;
+}
